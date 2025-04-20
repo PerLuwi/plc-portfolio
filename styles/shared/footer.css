@@ -1,0 +1,105 @@
+.footer-primary {
+  margin-top: 145px;
+  padding-bottom: 32px;
+  border-top: 1px solid var(--text1);
+}
+
+.footer-primary .footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.footer-primary .footer-wrapper .footer-left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-block: 16px;
+}
+
+.footer-primary .footer-wrapper .footer-left a {
+  width: max-content;
+}
+
+.footer-primary .footer-wrapper .footer-left p {
+  color: var(--text1);
+}
+
+.footer-primary .footer-wrapper .footer-right {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-block: 16px;
+}
+
+.footer-primary .footer-wrapper .footer-right > p {
+  color: var(--text1);
+  font-size: var(--fs-24);
+  font-weight: var(--fw-medium);
+}
+
+.footer-primary .footer-wrapper .footer-right .medias {
+  display: flex;
+}
+
+.footer-primary .footer-wrapper .footer-right .medias li a {
+  display: block;
+}
+
+.footer-primary .footer-wrapper .footer-right .medias li a svg {
+  height: 30px;
+  width: 30px;
+  fill: var(--text2);
+  display: block;
+}
+
+.footer-primary .footer-wrapper > p {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .footer-primary .footer-wrapper {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: flex-start;
+  }
+
+  .footer-primary .footer-wrapper .footer-left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .footer-primary .footer-wrapper .footer-left p {
+    margin-top: 16px;
+  }
+
+  .footer-primary .footer-wrapper .footer-right {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .footer-primary .footer-wrapper .footer-right {
+    align-items: flex-start;
+  }
+
+  .footer-primary .footer-wrapper > p {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+}

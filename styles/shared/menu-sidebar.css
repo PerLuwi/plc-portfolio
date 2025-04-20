@@ -1,0 +1,75 @@
+.sidebar-menu-container {
+  background-color: var(--bg-main);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 100%;
+  top: 0;
+  z-index: 4;
+  transition: left var(--transition);
+}
+
+.sidebar-menu-container.show-sidebar {
+  left: 0;
+}
+
+.sidebar-menu-container .header-sidebar-wrapper {
+  height: 61px;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 8px;
+}
+
+.sidebar-menu-container .header-sidebar-wrapper header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sidebar-menu-container .header-sidebar-wrapper header button {
+  display: block;
+}
+
+.sidebar-menu-container .header-sidebar-wrapper header button svg {
+  display: block;
+}
+
+.sidebar-menu-container .sidebar-nav ul li {
+  margin-bottom: 32px;
+  width: max-content;
+}
+
+.sidebar-menu-container .sidebar-nav ul li a {
+  text-decoration: none;
+  color: var(--text2);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-medium);
+  transition: color var(--transition);
+  width: max-content;
+}
+
+.sidebar-menu-container .sidebar-nav ul li a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 110%;
+  background: var(--accent);
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.sidebar-menu-container .sidebar-nav ul li a:hover::after {
+  transform: scale(1, 1);
+}
+
+.sidebar-menu-container .sidebar-nav ul li a:hover {
+  color: var(--text1);
+}
+
+.sidebar-menu-container .sidebar-nav ul li a span {
+  color: var(--accent);
+}
+
+.sidebar-menu-container .sidebar-nav ul li:nth-child(1) a {
+  color: var(--text1);
+}

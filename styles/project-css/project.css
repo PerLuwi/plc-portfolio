@@ -1,0 +1,104 @@
+main .project-section {
+  padding-top: 74px;
+}
+
+main .project-section .project-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+main .project-section .project-wrapper .project-label {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+main .project-section .project-wrapper .project-lists {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-top: 48px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px 20px;
+}
+
+main .project-section .project-wrapper .project-lists .project-list {
+  border: 1px solid var(--text2);
+  height: max-content;
+}
+
+main .project-section .project-wrapper .project-lists .project-list img {
+  width: 100%;
+  height: auto;
+}
+
+main
+  .project-section
+  .project-wrapper
+  .project-lists
+  .project-list
+  .techstack-container {
+  padding: 8px;
+  border-bottom: 1px solid var(--text2);
+}
+
+main
+  .project-section
+  .project-wrapper
+  .project-lists
+  .project-list
+  .project-information {
+  padding: 16px;
+}
+
+main
+  .project-section
+  .project-wrapper
+  .project-lists
+  .project-list
+  .project-information
+  h3 {
+  color: var(--text1);
+  font-weight: var(--fw-medium);
+}
+
+main
+  .project-section
+  .project-wrapper
+  .project-lists
+  .project-list
+  .project-information
+  p {
+  margin-block: 16px;
+}
+
+main
+  .project-section
+  .project-wrapper
+  .project-lists
+  .project-list
+  .project-information
+  a {
+  color: var(--text1);
+  text-decoration: none;
+}
+
+main .project-section .project-wrapper .view-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+main .project-section .project-wrapper .view-more-container .view-more-btn {
+  color: var(--text1);
+}
+
+main
+  .project-section
+  .project-wrapper
+  .view-more-container
+  .view-more-btn:hover {
+  color: var(--accent);
+}

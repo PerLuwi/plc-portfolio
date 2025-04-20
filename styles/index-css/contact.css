@@ -1,0 +1,146 @@
+main .contact-section {
+  padding-top: 112px;
+}
+
+main .contact-section .contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+main .contact-section .contact-wrapper .contact-label {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+main .contact-section .contact-wrapper .contact-container {
+  margin-top: 45px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .contact-section .contact-wrapper .contact-container .contact-statement {
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  display: flex;
+  align-items: center;
+}
+
+main .contact-section .contact-wrapper .contact-container .contact-statement p {
+  color: var(--text2);
+}
+
+main .contact-section .contact-wrapper .contact-container .contact-right {
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+main
+  .contact-section
+  .contact-wrapper
+  .contact-container
+  .contact-right
+  .contact-right-container {
+  height: max-content;
+  border: 1px solid var(--text2);
+  padding: 16px;
+}
+
+main
+  .contact-section
+  .contact-wrapper
+  .contact-container
+  .contact-right
+  .contact-right-container
+  .contact-right-label
+  h3 {
+  color: var(--text1);
+  font-size: var(--fw-16);
+  font-weight: var(--fw-semi-bold);
+}
+
+main
+  .contact-section
+  .contact-wrapper
+  .contact-container
+  .contact-right
+  .contact-right-container
+  ul {
+  margin-top: 16px;
+}
+
+main
+  .contact-section
+  .contact-wrapper
+  .contact-container
+  .contact-right
+  .contact-right-container
+  ul
+  li {
+  display: flex;
+  align-items: flex-end;
+
+  margin-top: 1rem;
+}
+
+main
+  .contact-section
+  .contact-wrapper
+  .contact-container
+  .contact-right
+  .contact-right-container
+  ul
+  li
+  .image-container {
+  margin-right: 5px;
+}
+
+main
+  .contact-section
+  .contact-wrapper
+  .contact-container
+  .contact-right
+  .contact-right-container
+  ul
+  li
+  .image-container
+  svg {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  main .contact-section .contact-wrapper .contact-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  main .contact-section .contact-wrapper .contact-container .contact-statement {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  main .contact-section .contact-wrapper .contact-container .contact-right {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    display: unset;
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+}

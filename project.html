@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/shared/header.css" />
+    <link rel="stylesheet" href="/styles/shared/footer.css" />
+    <link rel="stylesheet" href="/styles/shared/menu-sidebar.css" />
+    <link rel="stylesheet" href="/styles/shared/backdrop.css" />
+    <link rel="stylesheet" href="/styles/shared/video-container.css" />
+
+    <link rel="stylesheet" href="/styles/project-css/project.css" />
+    <script src="/scripts/shared/navbar.js" defer></script>
+    <script src="/scripts/project/projects.js" defer></script>
+    <title>Per Louie | Projects</title>
+  </head>
+  <body>
+    <header class="header-primary">
+      <div class="wrapper header-wrapper">
+        <div class="logo-container">
+          <a href="/" class="main-logo">
+            <img src="/assets/img/header-logo.png" alt="Pig Logo" />
+            Per Louie
+          </a>
+        </div>
+        <div class="menu-header-container">
+          <button class="button" id="hamburger-menu">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="5" width="24" height="2" fill="#D9D9D9" />
+              <rect x="9" y="12" width="15" height="2" fill="#D9D9D9" />
+            </svg>
+          </button>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="/#"><span>#</span>home</a>
+            </li>
+            <li>
+              <a href="/#projects"><span>#</span>projects</a>
+            </li>
+            <li>
+              <a href="/#techstacks"><span>#</span>techstacks</a>
+            </li>
+            <li>
+              <a href="/#about-me"><span>#</span>about-me</a>
+            </li>
+            <li>
+              <a href="/#contacts"><span>#</span>contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="project-section" id="projects">
+        <div class="wrapper project-wrapper">
+          <div class="section-label-container project-label">
+            <div class="label">
+              <h2><span>#</span>projects</h2>
+              <span></span>
+            </div>
+          </div>
+          <ul class="project-lists" data-aos="fade-up">
+            <li class="project-list">
+              <img
+                src="/assets/img/projects/project-1.png"
+                alt="Bella Olenje Website"
+              />
+              <div class="techstack-container">
+                <p>HTML and CSS</p>
+              </div>
+              <div class="project-information">
+                <h3>Bella Olenje</h3>
+                <p>
+                  This is an activity in my IT304 subject during my 3rd Year in
+                  College.
+                </p>
+                <button class="primary-btn" id="live-btn">Live</button>
+                <a
+                  href="https://github.com/PerLuwi/bella-olenje"
+                  class="primary-btn"
+                  >Github</a
+                >
+              </div>
+            </li>
+            <li class="project-list">
+              <img src="/assets/img/projects/project-2.png" alt="Tic-Tac-Toe" />
+              <div class="techstack-container">
+                <p>HTML, CSS and JavaScript</p>
+              </div>
+              <div class="project-information">
+                <h3>Tic-Tac-Toe</h3>
+                <p>
+                  This is my first project implementing JavaScript, It allows
+                  players to play Tic-Tac-Toe using only one device.
+                </p>
+                <button class="primary-btn" id="live-btn">Live</button>
+                <a
+                  href="https://github.com/PerLuwi/tic-tac-toe"
+                  class="primary-btn"
+                  >Github</a
+                >
+              </div>
+            </li>
+            <li class="project-list">
+              <img
+                src="/assets/img/projects/project-3.png"
+                alt="Blog Website"
+              />
+              <div class="techstack-container">
+                <p>HTML, CSS, NodeJS, ExpressJS, MySQL and EJS</p>
+              </div>
+              <div class="project-information">
+                <h3>MyBlog</h3>
+                <p>
+                  A website that allows user to upload a blog, Implementing CRUD
+                  operations using MySQL as a database and ExpressJS as
+                  Server-side Tool for creating a web-server.
+                </p>
+                <button class="primary-btn" id="live-btn">Live</button>
+                <a
+                  href="https://github.com/PerLuwi/blog-uploader"
+                  class="primary-btn"
+                  >Github</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="view-more-container">
+            <button class="view-more-btn">View More...</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-primary">
+      <div class="wrapper footer-wrapper">
+        <div class="footer-left">
+          <a href="/" class="main-logo">
+            <img src="/assets/img/header-logo.png" alt="A Pig Logo" />
+            Per Louie
+          </a>
+          <p>Aspiring fullstack web developer</p>
+        </div>
+        <div class="footer-right">
+          <p>Other Socials</p>
+          <ul class="medias">
+            <li>
+              <a href="https://www.facebook.com/perlouie.clara">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>© Copyright 2025. Made by Per Louie</p>
+      </div>
+    </footer>
+
+    <aside class="sidebar-menu-container" id="sidebar-menu">
+      <div class="wrapper header-sidebar-wrapper">
+        <header>
+          <button class="button" id="close-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="1"
+                height="1"
+                transform="matrix(1 0 0 -1 11 12)"
+                fill="#D9D9D9"
+              />
+              <rect
+                x="3"
+                y="19.9706"
+                width="24"
+                height="2"
+                transform="rotate(-45 3 19.9706)"
+                fill="#D9D9D9"
+              />
+              <rect
+                x="4"
+                y="3"
+                width="24"
+                height="2"
+                transform="rotate(45 4 3)"
+                fill="#D9D9D9"
+              />
+            </svg>
+          </button>
+        </header>
+      </div>
+      <div class="wrapper sidebar-nav">
+        <nav>
+          <ul id="sidebar-nav">
+            <li>
+              <a href="/#"><span>#</span>home</a>
+            </li>
+            <li>
+              <a href="/#projects"><span>#</span>projects</a>
+            </li>
+            <li>
+              <a href="/#techstacks"><span>#</span>techstacks</a>
+            </li>
+            <li>
+              <a href="/#about-me"><span>#</span>about-me</a>
+            </li>
+            <li>
+              <a href="/#contacts"><span>#</span>contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div class="backdrop"></div>
+    <div class="video-container">
+      <button class="button" id="close-icon-video-container">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            width="1"
+            height="1"
+            transform="matrix(1 0 0 -1 11 12)"
+            fill="#D9D9D9"
+          />
+          <rect
+            x="3"
+            y="19.9706"
+            width="24"
+            height="2"
+            transform="rotate(-45 3 19.9706)"
+            fill="#D9D9D9"
+          />
+          <rect
+            x="4"
+            y="3"
+            width="24"
+            height="2"
+            transform="rotate(45 4 3)"
+            fill="#D9D9D9"
+          />
+        </svg>
+      </button>
+      <video controls width="100%" height="100%" autoplay muted>
+        <source id="video-source" src="" />
+      </video>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
