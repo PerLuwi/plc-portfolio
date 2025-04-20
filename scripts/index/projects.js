@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   /* Locate Project index in videos folder and play */
   function locateProjectVideoAndPlay(i) {
-    const projectPath = `assets/videos/project-${i + 1}`;
+    const projectPath = `/assets/videos/project-${i + 1}.mp4`;
     videoSourceElement.src = projectPath;
     videoElement.load();
   }

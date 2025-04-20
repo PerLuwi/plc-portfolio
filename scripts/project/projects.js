@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', function () {
   }
 
   function locateProjectVideoAndPlay(i) {
-    const projectPath = `assets/videos/project-${i + 1}`;
+    const projectPath = `/assets/videos/project-${i + 1}.mp4`;
     videoSourceElement.src = projectPath;
     videoElement.load();
   }
